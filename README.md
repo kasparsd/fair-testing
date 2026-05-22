@@ -10,7 +10,7 @@ An environment for testing the [FAIR Connect plugin](https://github.com/fairpm/f
 
 2. Start the local development environment:
 
-       npx @wordpress/env start -- --xdebug
+       npx @wordpress/env start --xdebug
 
 3. Visit http://localhost:8888 and login with `admin` / `password`.
 
