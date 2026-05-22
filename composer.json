@@ -1,0 +1,48 @@
+{
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org",
+			"only": [
+				"wpackagist-plugin/*",
+				"wpackagist-theme/*"
+			]
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/fairpm/fair-plugin"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/wpelevator/update-pilot"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/afragen/handbook-callout-blocks"
+		}
+	],
+	"minimum-stability": "alpha",
+	"prefer-stable": true,
+	"require": {
+		"afragen/handbook-callout-blocks": "^1.0",
+		"composer/installers": "^1.0 || ^2.0",
+		"wpelevator/update-pilot": "^0.5"
+	},
+	"require-dev": {
+		"roots/wordpress-full": "^7.0",
+		"roots/wordpress-core-installer": "^4.0"
+	},
+	"extra": {
+		"wordpress-install-dir": "wordpress"
+	},
+	"config": {
+		"sort-packages": true,
+		"platform": {
+			"php": "8.0"
+		},
+		"allow-plugins": {
+			"roots/wordpress-core-installer": true,
+			"composer/installers": true
+		}
+	}
+}
